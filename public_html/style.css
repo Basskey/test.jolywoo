@@ -1,0 +1,20 @@
+@font-face {
+ font-family: "GothamPro";
+ src: url("GothaProMed.otf") format("woff"); }
+
+* {
+	color:white;
+	font-family: "GothamPro"; }
+
+.has-pattern {
+    background-image: url(http://jolywoo.com/assets/img/bg/pattern.jpg?ver=3.0.5);
+    background-color: #000;
+    background-color: var(--black); }
+
+.menu-container {
+	display: flex;
+	max-width: 923px;
+	flex-wrap: wrap; }
+
+.menu-item {
+	width: 206px; }
