@@ -110,7 +110,8 @@ p, span {
 }
 
 .delivery__icon {
-	margin: 10px; }
+	margin: 10px;
+	cursor: pointer !important; }
 
 .delivery__icon:not(:last-child) {
 	background-image: url(http://jolywoo.com/assets/img/jolywoo_sprite.png?ver=3.0.5);
