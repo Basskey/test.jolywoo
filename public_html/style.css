@@ -1,32 +1,86 @@
 @font-face {
  font-family: "GothamPro";
  src: url("GothaProMed.otf") format("woff"); }
+ @font-face {
+ font-family: "GothamProLig";
+ src: url("GothaProLig.otf") format("woff"); }
 
 * {
 	color:white;
 	font-family: "GothamPro"; }
 
 section {
-	padding: 38px 0;
+	padding: 10px 0;
 	display: flex;
 	flex-direction: column;
 	align-items: center; }
 
+	section > h2 {
+		color: #76b82a;
+		font-size: 2em;
+		font-weight: 400;
+		margin: 0; }
 
+	section > h3 {
+		font-size: 1.3em;
+		font-weight: 100;
+		letter-spacing: 1px;
+		margin-bottom: 0; }
+
+p {
+	font-size: 1.2em;
+	margin: 10px auto;
+	text-align: center;
+	margin-bottom: 50px; }
+
+span {
+	font-size: .95em; }
+
+p, span {
+	font-weight: 100;
+	font-family: "GothamProLig"; }
 
 .menu-container {
 	display: flex;
-	max-width: 923px;
+	max-width: 990px;
+	justify-content: center;
 	flex-wrap: wrap; }
 
 .menu-item {
-	width: 206px; }
+	width: 206px;
+	margin: 20px; }
+
+	.menu-item p {
+		display: flex;
+		justify-content: space-between;
+		margin: 14px 0; }
+
+.full-menu {
+	display: flex;
+    justify-content: center;
+	color: #6db528;
+    border: 2px solid;
+    line-height: 45px;
+    border-radius: 1.5em;
+    width: 230px;
+    transition: 0.3s; }
+    .full-menu:hover {
+    	background-color: #6db528;
+    	border-color: #6db528;
+    	color: white;
+    	cursor: pointer;
+    	transition: 0.3s; }
 
 /*inherit*/
 
 .g-color-green {
-    color: #76b82a; }
+	color: #76b82a; }
 
 .has-pattern {
 	background-image: url(http://jolywoo.com/assets/img/bg/pattern.jpg?ver=3.0.5);
 	background-color: #000; }
+
+.img-container {
+	width: 206px;
+	height: 137px;
+	overflow: hidden; }
