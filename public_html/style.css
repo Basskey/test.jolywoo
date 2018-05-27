@@ -11,7 +11,7 @@
 	cursor: default; }
 
 section {
-	padding: 10px 0;
+	padding: 10px;
 	display: flex;
 	flex-direction: column;
 	align-items: center; }
@@ -84,7 +84,7 @@ p, span {
 
 .smm-links p {
 	font-weight: 600;
-	font-size: 22px;
+	font-size: 20px;
 	display: flex;
 	margin: 10px; }
 
@@ -140,7 +140,8 @@ p, span {
 		background-color: #76b82a;
 		transition: 0.3s;
 		cursor: pointer; }
-		.delivery__icon:last-child:hover {
+		.delivery__icon:last-child:hover,
+		.delivery__icon:last-child:active {
 			background-color: white;
 			transition: 0.3s; }
 		.delivery__icon:last-child span {
@@ -149,6 +150,7 @@ p, span {
 				color: #6db528 !important;
 				cursor: pointer !important; }
 
-@media screen and (max-width: 530px) {
-
+@media screen and (max-width: 600px) {
+	.menu-item {
+		margin: 10px; }
 }
