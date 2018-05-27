@@ -7,7 +7,8 @@
 
 * {
 	color:white;
-	font-family: "GothamPro"; }
+	font-family: "GothamPro";
+	cursor: default; }
 
 section {
 	padding: 10px 0;
@@ -25,9 +26,10 @@ section {
 		font-size: 1.3em;
 		font-weight: 100;
 		letter-spacing: 1px;
-		margin-bottom: 0; }
+		margin-bottom: 0;
+		text-align: center; }
 
-p {
+section > p {
 	font-size: 1.2em;
 	margin: 10px auto;
 	text-align: center;
@@ -57,19 +59,34 @@ p, span {
 
 .full-menu {
 	display: flex;
-    justify-content: center;
+	justify-content: center;
 	color: #6db528;
-    border: 2px solid;
-    line-height: 45px;
-    border-radius: 1.5em;
-    width: 230px;
-    transition: 0.3s; }
-    .full-menu:hover {
-    	background-color: #6db528;
-    	border-color: #6db528;
-    	color: white;
-    	cursor: pointer;
-    	transition: 0.3s; }
+	border: 2px solid;
+	line-height: 45px;
+	border-radius: 1.5em;
+	width: 230px;
+	transition: 0.3s;
+	margin: 1em auto .5em;
+	cursor: pointer; }
+	.full-menu:hover {
+		background-color: #6db528;
+		border-color: #6db528;
+		color: white;
+		transition: 0.3s; }
+
+.smm-links {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 30px;
+	flex-wrap: wrap;
+    justify-content: center; }
+
+.smm-links p {
+	font-weight: 600;
+	font-size: 22px;
+	display: flex;
+	margin: 10px; }
 
 /*inherit*/
 
@@ -84,3 +101,54 @@ p, span {
 	width: 206px;
 	height: 137px;
 	overflow: hidden; }
+
+.delivery__icons {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+
+.delivery__icon {
+	margin: 10px; }
+
+.delivery__icon:not(:last-child) {
+	background-image: url(http://jolywoo.com/assets/img/jolywoo_sprite.png?ver=3.0.5);
+	height: 58px;
+	width: 55px;
+	background-size: 56px;
+	background-repeat: no-repeat;
+	display: block; } 
+	.delivery__icon:nth-child(1) {
+		background-position-y: -60px; }
+	.delivery__icon:nth-child(2) { 
+		background-position-y: -117px; }
+	.delivery__icon:nth-child(3) { 
+		background-position-y: -2px; }
+	.delivery__icon:last-child {
+		font-family: "GothamProLig";
+		width: 250px;
+		height: 50px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		border-radius: 25px;
+		font-size: 14px;
+		font-weight: 400;
+		text-decoration: none;
+		background-color: #76b82a;
+		transition: 0.3s;
+		cursor: pointer; }
+		.delivery__icon:last-child:hover {
+			background-color: white;
+			transition: 0.3s; }
+		.delivery__icon:last-child span {
+			font-size: 12px; }
+			.delivery__icon:last-child:hover * {
+				color: #6db528 !important;
+				cursor: pointer !important; }
+
+@media screen and (max-width: 530px) {
+
+}
