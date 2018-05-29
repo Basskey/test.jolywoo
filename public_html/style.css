@@ -11023,7 +11023,7 @@ footer {
 /*independent CSS*/
 
 @font-face {
- font-family: "GothamPro";
+ font-family: "GothamProInd";
  src: url("GothaProMed.otf") format("woff"); }
  @font-face {
  font-family: "GothamProLig";
@@ -11031,7 +11031,7 @@ footer {
 
 * {
 	color:white;
-	font-family: "GothamPro";
+	font-family: "GothamProInd";
 	cursor: default; }
 
 section {
@@ -11113,13 +11113,6 @@ p, span {
 	margin: 10px; }
 
 /*inherit*/
-
-.g-color-green {
-	color: #76b82a; }
-
-.has-pattern {
-	background-image: url(http://jolywoo.com/assets/img/bg/pattern.jpg?ver=3.0.5);
-	background-color: #000; }
 
 .img-container {
 	width: 206px;
