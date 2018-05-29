@@ -11028,41 +11028,42 @@ footer {
  @font-face {
  font-family: "GothamProLig";
  src: url("GothaProLig.otf") format("woff"); }
-
+/*
 * {
 	color:white;
 	font-family: "GothamProInd";
-	cursor: default; }
+	cursor: default; }*/
 
-section {
+#independentcss {
 	padding: 10px;
 	display: flex;
 	flex-direction: column;
 	align-items: center; }
 
-	section > h2 {
+	#independentcss > h2 {
 		color: #76b82a;
 		font-size: 2em;
 		font-weight: 400;
 		margin: 0; }
 
-	section > h3 {
+	#independentcss > h3 {
 		font-size: 1.3em;
 		font-weight: 100;
 		letter-spacing: 1px;
 		margin-bottom: 0;
 		text-align: center; }
 
-section > p {
+#independentcss > p {
 	font-size: 1.2em;
 	margin: 10px auto;
 	text-align: center;
 	margin-bottom: 50px; }
 
-span {
+#independentcss span {
 	font-size: .95em; }
 
-p, span {
+#independentcss p,
+#independentcss span {
 	font-weight: 100;
 	font-family: "GothamProLig"; }
 
